@@ -171,17 +171,24 @@ Dalam proyek ini, tujuan utamanya adalah memprediksi hasil panen (yield) dalam s
 1. **Root Mean Squared Error (RMSE)**
 RMSE mengukur akar dari rata-rata kuadrat selisih antara nilai prediksi dan nilai aktual.
 
-    ![alt text](image.png)
+![Screenshot 2025-06-01 150757](https://github.com/user-attachments/assets/267eb3cc-b9da-4ad8-b663-5faa4319aefc)
+
 
 2. **Mean Absolute Error (MAE)**
  MAE menghitung rata-rata dari nilai absolut selisih antara prediksi dan aktual.
 
-    ![alt text](image-1.png)
+
+ ![Screenshot 2025-06-01 151008](https://github.com/user-attachments/assets/72bff4ba-74e0-45b5-a123-a01bbeaa770f)
+
+
 
 3. **R-squared (R²)**
 R² menunjukkan proporsi variabilitas target yang bisa dijelaskan oleh fitur-fitur input.
 
-    ![alt text](image-2.png)
+
+![Screenshot 2025-06-01 151107](https://github.com/user-attachments/assets/966f2a7d-2c5e-4629-8100-34699aea71e6)
+
+
 
 **Hasil Evaluasi Model**
 
@@ -194,7 +201,7 @@ Linear Regression            |     0.5004 |     0.5008 |     0.3992 |     0.3996
 
 Random Forest                |     0.3562 |     0.5088 |     0.2860 |     0.4059 |    0.9559 |    0.9102
 
-**RF (Important Features)      |     0.4973 |     0.5016 |     0.3968 |     0.4002 |    0.9140 |    0.9127**
+**RF (Important Features)    |     0.4973 |     0.5016 |     0.3968 |     0.4002 |    0.9140 |    0.9127**
 
 XGBoost                      |     0.5066 |     0.5074 |     0.4041 |     0.4048 |    0.9108 |    0.9107
 
@@ -208,24 +215,43 @@ Koefisien Linear Regression:
 Feature  | Coefficient
             
 Fertilizer_Used_True   |   1.499406
+
 Rainfall_mm  |   1.298387
+
 Irrigation_Used_True  |   1.199223
+
 Temperature_Celsius   |  0.143947
+
 Soil_Type_Clay   |  0.003190
+
 Soil_Type_Sandy  |   0.002746
+
 Crop_Rice   |  0.001476
+
 Weather_Condition_Rainy   |  0.001454
+
 Days_to_Harvest   |  0.000527
+
 Region_North  |   0.000454
+
 Soil_Type_Loam  |   0.000178
+
 Soil_Type_Peaty  |   0.000071
+
 Weather_Condition_Sunny  |  -0.000249
+
 Region_South  |  -0.000479
+
 Crop_Soybean   | -0.000728
+
 Region_West   | -0.000749
+
 Soil_Type_Silt  |  -0.001662
+
 Crop_Cotton  |  -0.001722
+
 Crop_Wheat  |  -0.002918
+
 Crop_Maize  |  -0.003013
 
 Interpretasi : Berdasarkan koefisien Linear Regression, fitur yang paling berpengaruh positif terhadap hasil panen adalah penggunaan pupuk (+1.5 ton/ha), curah hujan (+1.3 ton/ha), dan penggunaan irigasi (+1.2 ton/ha). Sementara itu, jenis tanaman seperti jagung dan gandum cenderung memiliki kontribusi negatif kecil terhadap prediksi hasil panen.
